@@ -1,38 +1,107 @@
-.App {
-  text-align: center;
+body {
+  background-color: #e0dfdf;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-family: 'Montserrat', sans-serif;
 }
-
-.App-link {
-  color: #61dafb;
+h1 {
+  text-transform: uppercase;
+  color: #CC3636;
+  letter-spacing: 5px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+span {
+  color: #182747;
+  letter-spacing: 5px;
+}
+h2 {
+  text-transform: uppercase;
+  color: #647E68;
+  font-size: 25px;
+  letter-spacing: 5px;
+}
+h3 {
+  color: #182747;
+  letter-spacing: 2px;
+}
+.photo {
+  width: 30%;
+  height: 60%;
+  border: 5px solid #647E68;
+}
+.remove {
+  margin: 10px;
+  padding: 10px;
+  width: 15%;
+  border: none;
+  background-color: #182747;
+  color: #e0dfdf;
+  font-size: 20px;
+  text-transform: uppercase;
   }
-  to {
-    transform: rotate(360deg);
+.btn {
+  margin: 10px;
+  padding: 10px;
+  width: 15%;
+  border: none;
+  background-color: #CC3636;
+  color: #e0dfdf;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+.picture {
+  width: 30%;
+  height: 60%;
+  margin: 10px;
+}
+.next {
+  width: 15%;
+  height: 5%;
+  align-self: center;
+  padding: 10px;
+  background-color: #647E68;
+  color: #e0dfdf;
+  font-size: 15px;
+  text-transform: uppercase;
+  border: none;
+}
+.show {
+  background: none;
+  border: none;
+  color:  #647E68;
+  font-size: 15px;
+}
+
+
+@media all and (max-width:600px) {
+  h1 {
+    font-size: 18px;
+  }
+  h3, .show {
+    font-size: 13px;
+  }
+  h2 {
+    font-size: 18px;
+  }
+  .remove, .btn, .next {
+    font-size: 10px;
+  }
+}
+@media all and (max-width:600px) {
+  .remove, .btn, .next {
+    font-size: 7px;
+  }
+  h1 {
+    font-size: 10px;
+  }
+  h3 {
+    font-size: 8px;
+  }
+  h2 {
+    font-size: 13px;
+  }
+  .show {
+    font-size: 8px;
   }
 }
